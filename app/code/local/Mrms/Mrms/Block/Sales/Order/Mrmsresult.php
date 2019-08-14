@@ -64,7 +64,6 @@ class Mrms_Mrms_Block_Sales_Order_Mrmsresult extends Mage_Adminhtml_Block_Templa
 				$status = '-';
 		}
 		$txnid = explode('-',$data['TxnLogID']);
-		//$reviewLink = "<a href=http://localhost/mrms-v3/trunk/app/rms/txnlog/action/view/txnlogid/".$txnid[1].">Review</a>";
 		$txnviewLink = "http://www.rmsid.com/fde/app/rms/txnlog/action/view/pageID/1/txnlogid/".$txnid[1];
 		
 		$out = '
@@ -101,9 +100,7 @@ class Mrms_Mrms_Block_Sales_Order_Mrmsresult extends Mage_Adminhtml_Block_Templa
 			    </td>
 			    <td style="padding:5px;"><span><strong>IP Address</strong></span></td>
 			    <td style="padding:5px;">
-				<span>'.$data['ip_address'].'
-				    <a href="http://www.geolocation.com/' . $data['ip_address'] . '" target="_blank">[Map]</a>
-				</span>
+				<span>'.(empty($data['Output']['Ip']) ? "-" : $data['Output']['Ip']."<a href=\"http://www.geolocation.com/". $data['Output']['Ip'] ."\" target=\"_blank\">[Map]</a>").'</span>
 			    </td>
 			</tr>
 			<tr>

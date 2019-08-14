@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
-    "description": "Online transaction fraud detection",
+    "description": "Online credit card fraud detection",
     "authors": [
     {
         "name": "MerchantRMS",

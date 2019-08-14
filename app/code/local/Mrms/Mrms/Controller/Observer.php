@@ -83,7 +83,7 @@ class Mrms_Mrms_Controller_Observer{
 				'ShipPeriod'=>0,
 				'ShipMethod'=>'',
 				'Products'=>'',
-				'Ip'=>$_SERVER['REMOTE_ADDR'],
+				'Ip'=>'',
 				'Submit'=>'Submit'
 				);
 		
@@ -110,7 +110,6 @@ class Mrms_Mrms_Controller_Observer{
 			}
 		}
 
-		$response['ip_address'] = $fields['Ip'];
 		$response['api_key'] = $apiKey;
 
 		$order->setmrms_response(serialize($response))->save();
