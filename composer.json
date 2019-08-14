@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Mrms_Mrms",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Online transaction fraud detection",
+    "authors": [
+    {
+        "name": "MerchantRMS",
+        "email": "devadmin@merchantrms.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

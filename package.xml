@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mrms_Mrms</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Online transaction fraud detection</summary>
+    <description>Online transaction fraud detection</description>
+    <notes>Online credit card fraud detection</notes>
+    <authors><author><name>MerchantRMS</name><user>devadmin</user><email>devadmin@merchantrms.com</email></author></authors>
+    <date>2014-04-08</date>
+    <time>10:43:48</time>
+    <contents><target name="magelocal"><dir name="Mrms"><dir name="Mrms"><dir name="Block"><file name="Jssnippet.php" hash="cf9fb49fb983b77cbf11fa223caea73b"/><dir name="Sales"><dir name="Order"><dir name="Grid"><dir name="Renderer"><file name="Risk.php" hash="549a824c2612fbda2df9c8252fdbdbae"/></dir></dir><file name="Grid.php" hash="d8ada82a9f58ef39a4c63f50929c24c2"/><file name="Mrmsresult.php" hash="1877a77a7037082ac60528087bf87a5d"/></dir></dir></dir><dir name="Controller"><file name="Observer.php" hash="dd2361575b8200f4c30587d7f3892ec4"/></dir><dir name="Helper"><file name="Data.php" hash="2994a2b1afa2ba7aab9608c276c4df2c"/></dir><dir name="controllers"><file name="IndexController.php" hash="eaa56b78de7f1b82d97e8e272e319516"/></dir><dir name="etc"><file name="adminhtml.xml" hash="4521234c57634fce4863c1d76b3b69db"/><file name="config.xml" hash="0a29c95516514f7999d797259055e077"/><file name="system.xml" hash="64e374feda73d9c2becab0f7ebd63efc"/></dir><dir name="sql"><dir name="mrms_setup"><file name="mysql4-install-1.0.0.php" hash="b72f2d6066d5601c3919773cdffd681a"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="mrms.xml" hash="53c1df7384c4af93553b93b30037b324"/></dir><dir name="template"><dir name="mrms"><dir name="sales"><dir name="order"><dir name="view"><dir name="tab"><file name="info.phtml" hash="4090fae7900f0f9d8e9b7369cf8ffd30"/></dir></dir></dir></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="mrms.xml" hash="947d78c51f49d47aa578dd606f01af90"/></dir><dir name="template"><dir name="mrms"><file name="jssnippet.phtml" hash="434cbe42b0db8082c6747dfa3dddde41"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mrms_Mrms.xml" hash="da097edc67d2a76ba4e67e7af39f3d35"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

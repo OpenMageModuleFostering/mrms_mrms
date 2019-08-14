@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Mrms_Mrms>
+			<version>1.0.1</version>
+		</Mrms_Mrms>
+	</modules>
+
+	<global>
+		<blocks>
+			<mrms>
+				<class>Mrms_Mrms_Block</class>
+			</mrms>
+			<adminhtml>
+				<rewrite>
+					<sales_order_grid>Mrms_Mrms_Block_Sales_Order_Grid</sales_order_grid>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+		<models>
+			<mrms>
+				<class>Mrms_Mrms_Model</class>
+			</mrms>
+		</models>
+		<helpers>
+            <mrms>
+                <class>Mrms_Mrms_Helper</class>
+            </mrms>
+		</helpers>
+		
+		<resources>
+			<mrms_setup>
+                <setup>
+                    <module>Mrms_Mrms</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mrms_setup>
+
+            <mrms_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mrms_write>
+            <mrms_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mrms_read>
+        </resources>
+		
+		<events>
+			<sales_order_save_after>
+				<observers>
+					<send_request_to_mrms>
+						<type>singleton</type>
+						<class>Mrms_Mrms_Controller_Observer</class>
+						<method>sendRequestToMrms</method>
+					</send_request_to_mrms>
+				</observers>
+			</sales_order_save_after>  
+		</events>
+	</global>
+
+	<adminhtml>
+		<layout>
+            <updates>
+                <mrms>
+                    <file>mrms.xml</file>
+				</mrms>
+			</updates>
+		</layout>
+	</adminhtml>
+	
+	<frontend>
+		<routers>
+			<mrms>
+                <use>standard</use>
+                <args>
+                    <module>Mrms_Mrms</module>
+                    <frontName>mrms</frontName>
+                </args>
+            </mrms>
+		</routers>
+		
+		<layout>
+			<updates>
+			  <mrms>
+				<file>mrms.xml</file>
+			  </mrms>
+			</updates>
+		</layout>
+		
+	</frontend>
+	 
+	<default>
+		<mrms>
+			<basic_settings>
+				<active>0</active>
+				<api_key></api_key>
+			</basic_settings>
+		</mrms>
+	</default>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+	<adminhtml_sales_order_view>
+		<reference name="order_tab_info">
+			<action method="setTemplate" ifconfig="mrms/basic_settings/active"><template>mrms/sales/order/view/tab/info.phtml</template></action>
+			<block type="mrms/sales_order_mrmsresult" name="mrms_sales_order_mrmsresult"></block>
+		</reference>
+	</adminhtml_sales_order_view>
+</layout>
