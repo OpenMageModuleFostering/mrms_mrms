@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Mrms_Mrms",
+    "name": "OpenMageModuleFostering\/Mrms_Mrms",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Online credit card fraud detection",
     "authors": [
-    {
-        "name": "MerchantRMS",
-        "email": "devadmin@merchantrms.com"
-    }
-],
+        {
+            "name": "MerchantRMS",
+            "email": "devadmin@merchantrms.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
